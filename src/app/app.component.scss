@@ -1,0 +1,25 @@
+::ng-deep {
+    .alert.alert-success, .sr-only, .input-group-text{
+        display: none;
+    }
+
+    .card-body, .col-xs-1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .is-disabled > div {
+        background-color: #e9ecef !important;
+        opacity: 1;
+    }
+    .form-control.is-invalid, .was-validated .form-control:invalid {
+        background-image: none !important;
+    }
+
+    .alert.alert-danger {
+        display: none !important;
+    }
+    .comp-disabled > .field-required::after {
+        content: '' !important;
+    }
+}

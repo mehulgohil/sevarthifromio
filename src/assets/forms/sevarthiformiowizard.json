@@ -1,0 +1,1438 @@
+{
+  "name": "wizard",
+  "path": "wizard",
+  "components": [
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "basicDetails",
+      "input": false,
+      "components": [
+        {
+          "title": "Basic Details",
+          "customClass": "",
+          "collapsible": false,
+          "key": "basicDetails",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "P ID",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "validate": {
+                "required": true
+              },
+              "key": "hr_id",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Title",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Mr.",
+                    "value": "Mr."
+                  },
+                  {
+                    "label": "Mrs.",
+                    "value": "Mrs."
+                  },
+                  {
+                    "label": "Ms.",
+                    "value": "Ms."
+                  },
+                  {
+                    "label": "Dr.",
+                    "value": "Dr."
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "title",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "First Name",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "first_name",
+              "type": "textfield",
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Middle Name",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "middle_name",
+              "type": "textfield",
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Last Name",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "last_name",
+              "type": "textfield",
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Old Last Name",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "old_name",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Birth Date",
+              "disabled": true,
+              "format": "dd-MM-yyyy",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "enableTime": false,
+              "timePicker": {
+                "showMeridian": false
+              },
+              "key": "birth_date",
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": true,
+                "disableWeekends": false,
+                "disableWeekdays": false
+              }
+            },
+            {
+              "label": "Gender",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "validate": {
+                "required": true
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Male",
+                    "value": "Male"
+                  },
+                  {
+                    "label": "Female",
+                    "value": "Female"
+                  },
+                  {
+                    "label": "Not Specified",
+                    "value": "Not Specified"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "gender",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Marital Status",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "validate": {
+                "required": true
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Married",
+                    "value": "Married"
+                  },
+                  {
+                    "label": "Single",
+                    "value": "Single"
+                  },
+                  {
+                    "label": "Divorced",
+                    "value": "Divorced"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "maritual_status",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Blood Group",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "A+",
+                    "value": "A+"
+                  },
+                  {
+                    "label": "A-",
+                    "value": "A-"
+                  },
+                  {
+                    "label": "B+",
+                    "value": "B-"
+                  },
+                  {
+                    "label": "AB+",
+                    "value": "AB+"
+                  },
+                  {
+                    "label": "AB-",
+                    "value": "AB-"
+                  },
+                  {
+                    "label": "O+",
+                    "value": "O+"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "blood_group",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "disabled": true,
+              "input": true
+            },
+            {
+              "label": "Gnan Date",
+              "format": "dd-MM-yyyy",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "disabled": true,
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "enableTime": false,
+              "timePicker": {
+                "showMeridian": false
+              },
+              "key": "gnan_date",
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": true,
+                "disableWeekends": false,
+                "disableWeekdays": false
+              }
+            }
+          ]
+        }
+      ],
+      "title": "Basic Details",
+      "type": "panel",
+      "tableView": false
+    },
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "communication",
+      "input": false,
+      "components": [
+        {
+          "title": "Communication",
+          "customClass": "",
+          "collapsible": false,
+          "key": "communication",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "Primary Mobile",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "mobile_1",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Whatsapp Mobile",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "whatsapp",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Alternate No.",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "mobile_2",
+              "type": "phoneNumber",
+              "input": true
+            },
+            {
+              "label": "Email",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "email",
+              "type": "email",
+              "input": true
+            },
+            {
+              "label": "Address 1",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "address_1",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Address 2",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "address_2",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Address 3",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "address_3",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "City",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "city",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Landmark",
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "landmark",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "State",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "state",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Pincode",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "pincode",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Country",
+              "disabled": true,
+              "tableView": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "key": "country",
+              "type": "textfield",
+              "input": true
+            }
+          ]
+        }
+      ],
+      "title": "Communication",
+      "type": "panel",
+      "tableView": false
+    },
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "centreInformation",
+      "input": false,
+      "components": [
+        {
+          "title": "Centre Information",
+          "customClass": "",
+          "collapsible": false,
+          "key": "centreInformation",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "City Centre",
+              "widget": "choicesjs",
+              "disabled": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "selectThreshold": 0.3,
+              "key": "city_centre",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Sub Centre Main",
+              "disabled": true,
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "selectThreshold": 0.3,
+              "key": "sub_centre_main",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Preferred Status",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Regular",
+                    "value": "Regular"
+                  },
+                  {
+                    "label": "Preferred",
+                    "value": "Preferred"
+                  },
+                  {
+                    "label": "Coordinator",
+                    "value": "Coordinator"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "preferred_status",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Time Category",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Part Time",
+                    "value": "Part Time"
+                  },
+                  {
+                    "label": "Full Time",
+                    "value": "Full Time"
+                  },
+                  {
+                    "label": "Floating",
+                    "value": "Floating"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "time_category",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Financial Support Required",
+              "tableView": false,
+              "key": "financial_support_required",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Amount Needed",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "currency": "INR",
+              "inputFormat": "plain",
+              "key": "amount_needed",
+              "conditional": {
+                "show": true,
+                "when": "financial_support_required",
+                "eq": "true"
+              },
+              "type": "currency",
+              "input": true,
+              "delimiter": true
+            }
+          ]
+        }
+      ],
+      "title": "Centre Information",
+      "type": "panel",
+      "tableView": false
+    },
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "education",
+      "input": false,
+      "components": [
+        {
+          "title": "Education",
+          "customClass": "",
+          "collapsible": false,
+          "key": "education",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "Qualification",
+              "disabled": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "widget": "choicesjs",
+              "tableView": true,
+              "multiple": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "",
+                    "value": ""
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "qualification",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Work Experience",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "key": "work_experience",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Hobbies",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "key": "hobby",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Work Skill",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "widget": "choicesjs",
+              "tableView": true,
+              "multiple": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "DRIVING-HEAVY VEHICLE/TRACTOR",
+                    "value": "DRIVING-HEAVY VEHICLE/TRACTOR"
+                  },
+                  {
+                    "label": "ANY OTHER",
+                    "value": "ANY OTHER"
+                  },
+                  {
+                    "label": "WRITERS - (FOR PRESS, MEDIA AND SOCIAL MEDIA)",
+                    "value": "WRITERS - (FOR PRESS, MEDIA AND SOCIAL MEDIA)"
+                  },
+                  {
+                    "label": "WORK WITH YOUTH",
+                    "value": "WORK WITH YOUTH"
+                  },
+                  {
+                    "label": "TRANSLATION - OTHERS",
+                    "value": "TRANSLATION - OTHERS"
+                  },
+                  {
+                    "label": "TRANSLATION - HINDI TO MARATHI",
+                    "value": "TRANSLATION - HINDI TO MARATHI"
+                  },
+                  {
+                    "label": "TRANSLATION - HINDI TO GUJ",
+                    "value": "TRANSLATION - HINDI TO GUJ"
+                  },
+                  {
+                    "label": "TRANSLATION - GUJ TO MARATHI",
+                    "value": "TRANSLATION - GUJ TO MARATHI"
+                  },
+                  {
+                    "label": "TRANSLATION - GUJ TO HINDI",
+                    "value": "TRANSLATION - GUJ TO HINDI"
+                  },
+                  {
+                    "label": "TRANSLATION - GUJ TO ENG",
+                    "value": "TRANSLATION - GUJ TO ENG"
+                  },
+                  {
+                    "label": "TRANSLATION - ENG TO GUJ",
+                    "value": "TRANSLATION - ENG TO GUJ"
+                  },
+                  {
+                    "label": "TRAINING & WORKSHOPS",
+                    "value": "TRAINING & WORKSHOPS"
+                  },
+                  {
+                    "label": "TECHNICAL",
+                    "value": "TECHNICAL"
+                  },
+                  {
+                    "label": "TEACHING & EDUCATION",
+                    "value": "TEACHING & EDUCATION"
+                  },
+                  {
+                    "label": "STORE KEEPER",
+                    "value": "STORE KEEPER"
+                  },
+                  {
+                    "label": "STITCHING",
+                    "value": "STITCHING"
+                  },
+                  {
+                    "label": "SPORTS & PHYSICAL ACTIVITIES",
+                    "value": "SPORTS & PHYSICAL ACTIVITIES"
+                  },
+                  {
+                    "label": "SOUND RECORDING",
+                    "value": "SOUND RECORDING"
+                  },
+                  {
+                    "label": "SOUND CONTROLLER",
+                    "value": "SOUND CONTROLLER"
+                  },
+                  {
+                    "label": "SERVING & KITCHEN RELATED WORK",
+                    "value": "SERVING & KITCHEN RELATED WORK"
+                  },
+                  {
+                    "label": "SALES & CUSTOMER SERVICE",
+                    "value": "SALES & CUSTOMER SERVICE"
+                  },
+                  {
+                    "label": "RESEARCH & DEVELOPMENT",
+                    "value": "RESEARCH & DEVELOPMENT"
+                  },
+                  {
+                    "label": "QUALITY CONTROL",
+                    "value": "QUALITY CONTROL"
+                  },
+                  {
+                    "label": "PURCHASE",
+                    "value": "PURCHASE"
+                  },
+                  {
+                    "label": "PRODUCTION",
+                    "value": "PRODUCTION"
+                  },
+                  {
+                    "label": "PRESENTERS (SPEAKERS)",
+                    "value": "PRESENTERS (SPEAKERS)"
+                  },
+                  {
+                    "label": "PHOTOGRAPHY - (STILL PHOTOGRAPHY)",
+                    "value": "PHOTOGRAPHY - (STILL PHOTOGRAPHY)"
+                  },
+                  {
+                    "label": "MUSICAL ARTISTS - (SINGERS, SONG WRITER, INSTRUMENT PLAYERS ETC)",
+                    "value": "MUSICAL ARTISTS - (SINGERS, SONG WRITER, INSTRUMENT PLAYERS ETC)"
+                  },
+                  {
+                    "label": "MUSIC, DANCE & DRAMA",
+                    "value": "MUSIC, DANCE & DRAMA"
+                  },
+                  {
+                    "label": "MEDICAL & SOCIAL CARE",
+                    "value": "MEDICAL & SOCIAL CARE"
+                  },
+                  {
+                    "label": "MECHANICAL",
+                    "value": "MECHANICAL"
+                  },
+                  {
+                    "label": "MARKETING & ADVERTISING",
+                    "value": "MARKETING & ADVERTISING"
+                  },
+                  {
+                    "label": "MANAGEMENT",
+                    "value": "MANAGEMENT"
+                  },
+                  {
+                    "label": "MAINTENANCE",
+                    "value": "MAINTENANCE"
+                  },
+                  {
+                    "label": "INTERIOR DESIGN",
+                    "value": "INTERIOR DESIGN"
+                  },
+                  {
+                    "label": "INFRASTRUCTURE - PLUMBING",
+                    "value": "INFRASTRUCTURE - PLUMBING"
+                  },
+                  {
+                    "label": "INFRASTRUCTURE - LANDSCAPING & GARDENING",
+                    "value": "INFRASTRUCTURE - LANDSCAPING & GARDENING"
+                  },
+                  {
+                    "label": "INFRASTRUCTURE - ELECTRICAL",
+                    "value": "INFRASTRUCTURE - ELECTRICAL"
+                  },
+                  {
+                    "label": "INFRASTRUCTURE - CIVIL WORK",
+                    "value": "INFRASTRUCTURE - CIVIL WORK"
+                  },
+                  {
+                    "label": "HUMAN RESOURCE DEVELOPMENT",
+                    "value": "HUMAN RESOURCE DEVELOPMENT"
+                  },
+                  {
+                    "label": "HOSPITALITY/GUEST SERVICES",
+                    "value": "HOSPITALITY/GUEST SERVICES"
+                  },
+                  {
+                    "label": "FARMING",
+                    "value": "FARMING"
+                  },
+                  {
+                    "label": "FABRICATION",
+                    "value": "FABRICATION"
+                  },
+                  {
+                    "label": "EVENT MANAGMENT",
+                    "value": "EVENT MANAGMENT"
+                  },
+                  {
+                    "label": "ELECTRICIAN",
+                    "value": "ELECTRICIAN"
+                  },
+                  {
+                    "label": "ELDERLY CARE",
+                    "value": "ELDERLY CARE"
+                  },
+                  {
+                    "label": "DECORATION & CRAFT",
+                    "value": "DECORATION & CRAFT"
+                  },
+                  {
+                    "label": "CROWD CONTROL",
+                    "value": "CROWD CONTROL"
+                  },
+                  {
+                    "label": "CREATIVE WRITING",
+                    "value": "CREATIVE WRITING"
+                  },
+                  {
+                    "label": "COUNSELLOR",
+                    "value": "COUNSELLOR"
+                  },
+                  {
+                    "label": "COOK",
+                    "value": "COOK"
+                  },
+                  {
+                    "label": "CONTENT DEVELOPMENT & MANAGEMENT",
+                    "value": "CONTENT DEVELOPMENT & MANAGEMENT"
+                  },
+                  {
+                    "label": "COMMUNICATION",
+                    "value": "COMMUNICATION"
+                  },
+                  {
+                    "label": "CLEANING/HOUSEKEEPING",
+                    "value": "CLEANING/HOUSEKEEPING"
+                  },
+                  {
+                    "label": "CHILD CARE",
+                    "value": "CHILD CARE"
+                  },
+                  {
+                    "label": "CHEMIST",
+                    "value": "CHEMIST"
+                  },
+                  {
+                    "label": "CASHIER",
+                    "value": "CASHIER"
+                  },
+                  {
+                    "label": "CARPENTRY",
+                    "value": "CARPENTRY"
+                  },
+                  {
+                    "label": "CAMERAMEN",
+                    "value": "CAMERAMEN"
+                  },
+                  {
+                    "label": "BOILER-OPERATOR & SUPERVISOR",
+                    "value": "BOILER-OPERATOR & SUPERVISOR"
+                  },
+                  {
+                    "label": "BINDER",
+                    "value": "BINDER"
+                  },
+                  {
+                    "label": "AUDIO & VIDEO",
+                    "value": "AUDIO & VIDEO"
+                  },
+                  {
+                    "label": "ART & PAINTING",
+                    "value": "ART & PAINTING"
+                  },
+                  {
+                    "label": "ARCHITECT",
+                    "value": "ARCHITECT"
+                  },
+                  {
+                    "label": "ADMIN",
+                    "value": "ADMIN"
+                  },
+                  {
+                    "label": "ACCOUNTS",
+                    "value": "ACCOUNTS"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "work_skill",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Occupation",
+              "disabled": true,
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "key": "occupation",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Computer Familiarity",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "computer_familiarity",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Computer Skills",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "multiple": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Computer Familiarity List",
+                    "value": "Computer Familiarity List"
+                  },
+                  {
+                    "label": "OTHER",
+                    "value": "OTHER"
+                  },
+                  {
+                    "label": "NONE",
+                    "value": "NONE"
+                  },
+                  {
+                    "label": "WEB DEVELOPER",
+                    "value": "WEB DEVELOPER"
+                  },
+                  {
+                    "label": "WEB DESIGNING",
+                    "value": "WEB DESIGNING"
+                  },
+                  {
+                    "label": "VIDEO MAKING & EDITING",
+                    "value": "VIDEO MAKING & EDITING"
+                  },
+                  {
+                    "label": "PROGRAMMING & SCRIPTING",
+                    "value": "PROGRAMMING & SCRIPTING"
+                  },
+                  {
+                    "label": "PHOTO EDITING",
+                    "value": "PHOTO EDITING"
+                  },
+                  {
+                    "label": "MICROSOFT OFFICE - BASIC",
+                    "value": "MICROSOFT OFFICE - BASIC"
+                  },
+                  {
+                    "label": "MICROSOFT OFFICE - ADVANCE",
+                    "value": "MICROSOFT OFFICE - ADVANCE"
+                  },
+                  {
+                    "label": "INTERNET & EMAIL",
+                    "value": "INTERNET & EMAIL"
+                  },
+                  {
+                    "label": "HARDWARE ENGINEER-TECHNICIAN",
+                    "value": "HARDWARE ENGINEER-TECHNICIAN"
+                  },
+                  {
+                    "label": "HARDWARE ENGINEER-NETWORKING",
+                    "value": "HARDWARE ENGINEER-NETWORKING"
+                  },
+                  {
+                    "label": "GRAPHICS & DESIGNING",
+                    "value": "GRAPHICS & DESIGNING"
+                  },
+                  {
+                    "label": "DTP",
+                    "value": "DTP"
+                  },
+                  {
+                    "label": "DATA ENTRY",
+                    "value": "DATA ENTRY"
+                  },
+                  {
+                    "label": "BASIC KNOWLEDGE",
+                    "value": "BASIC KNOWLEDGE"
+                  },
+                  {
+                    "label": "AUTOCAD",
+                    "value": "AUTOCAD"
+                  },
+                  {
+                    "label": "ANIMATION FILMS",
+                    "value": "ANIMATION FILMS"
+                  },
+                  {
+                    "label": "ADOBE - BASIC",
+                    "value": "ADOBE - BASIC"
+                  },
+                  {
+                    "label": "ADOBE - ADVANCE",
+                    "value": "ADOBE - ADVANCE"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "computer_skills",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Indian Languages Known",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "multiple": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "Hindi",
+                    "value": "Hindi"
+                  },
+                  {
+                    "label": "Gujarati",
+                    "value": "Gujarati"
+                  },
+                  {
+                    "label": "Marathi",
+                    "value": "Marathi"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "indian_languages_known",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Foreign Languages Known",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "multiple": true,
+              "data": {
+                "values": [
+                  {
+                    "label": "English",
+                    "value": "English"
+                  },
+                  {
+                    "label": "Spanish",
+                    "value": "Spanish"
+                  },
+                  {
+                    "label": "French",
+                    "value": "French"
+                  },
+                  {
+                    "label": "Deutsch",
+                    "value": "Deutsch"
+                  },
+                  {
+                    "label": "Portuguese",
+                    "value": "Portuguese"
+                  },
+                  {
+                    "label": "German",
+                    "value": "German"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "foreign_languages_known",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "Remarks",
+              "customClass": "col-12 p-3 mb-3",
+              "key": "remarks",
+              "autoExpand": false,
+              "tableView": true,
+              "type": "textarea",
+              "input": true
+            }
+          ]
+        }
+      ],
+      "title": "Education",
+      "type": "panel",
+      "tableView": false
+    },
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "sevaAvailability",
+      "input": false,
+      "components": [
+        {
+          "title": "Seva Availability",
+          "customClass": "",
+          "collapsible": false,
+          "key": "sevaAvailability",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "Seva Commitments",
+              "widget": "choicesjs",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "validate": {
+                "required": true
+              },
+              "data": {
+                "values": [
+                  {
+                    "label": "Part Time",
+                    "value": "Part Time"
+                  },
+                  {
+                    "label": "Full Time",
+                    "value": "Full Time"
+                  },
+                  {
+                    "label": "Other",
+                    "value": "Other"
+                  }
+                ]
+              },
+              "selectThreshold": 0.3,
+              "key": "seva_commitments",
+              "type": "select",
+              "indexeddb": {
+                "filter": {}
+              },
+              "input": true
+            },
+            {
+              "label": "General Availability",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "key": "general_availability",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Out Of City Remarks",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": true,
+              "key": "out_of_mumbai_frequency",
+              "type": "textfield",
+              "input": true
+            },
+            {
+              "label": "Start Date",
+              "format": "dd-MM-yyyy",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "enableTime": false,
+              "timePicker": {
+                "showMeridian": false
+              },
+              "key": "start_date",
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": true,
+                "disableWeekends": false,
+                "disableWeekdays": false
+              }
+            },
+            {
+              "label": "End Date",
+              "format": "dd-MM-yyyy",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "enableMinDateInput": false,
+              "datePicker": {
+                "disableWeekends": false,
+                "disableWeekdays": false
+              },
+              "enableMaxDateInput": false,
+              "enableTime": false,
+              "timePicker": {
+                "showMeridian": false
+              },
+              "key": "end_date",
+              "type": "datetime",
+              "input": true,
+              "widget": {
+                "type": "calendar",
+                "displayInTimezone": "viewer",
+                "locale": "en",
+                "useLocaleSettings": false,
+                "allowInput": true,
+                "mode": "single",
+                "enableTime": false,
+                "noCalendar": false,
+                "format": "yyyy-MM-dd",
+                "hourIncrement": 1,
+                "minuteIncrement": 1,
+                "time_24hr": true,
+                "disableWeekends": false,
+                "disableWeekdays": false
+              }
+            },
+            {
+              "label": "Duration",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "duration",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            },
+            {
+              "label": "Hours/Day",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "hoursday",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            },
+            {
+              "label": "Days/Week",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "daysweek",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            },
+            {
+              "label": "Hours/Week",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "hoursweek",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            },
+            {
+              "label": "Days/Month",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "daysmonth",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            },
+            {
+              "label": "Hours/Month",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "mask": false,
+              "spellcheck": true,
+              "tableView": false,
+              "delimiter": false,
+              "requireDecimal": false,
+              "inputFormat": "plain",
+              "key": "hoursmonth",
+              "type": "number",
+              "input": true,
+              "decimalLimit": 0
+            }
+          ]
+        }
+      ],
+      "title": "Seva Availability",
+      "type": "panel",
+      "tableView": false
+    },
+    {
+      "hideLabel": false,
+      "clearOnHide": false,
+      "conditional": {
+        "eq": "",
+        "when": null,
+        "show": ""
+      },
+      "theme": "default",
+      "key": "otherInformation",
+      "input": false,
+      "components": [
+        {
+          "title": "Other Information",
+          "customClass": "",
+          "collapsible": false,
+          "key": "otherInformation",
+          "type": "panel",
+          "label": "Panel",
+          "input": false,
+          "tableView": false,
+          "components": [
+            {
+              "label": "Can Drive Activa",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "can_drive_activa",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Owns Two Wheeler",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "owns_two_wheelers",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Can Drive Bike",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "can_drive_bike",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Owns Self Car",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "owns_self_car",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Can Drive Car",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "can_drive_car",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            },
+            {
+              "label": "Has HMV License",
+              "customClass": "col-12 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-3 mb-3",
+              "tableView": false,
+              "key": "has_hmv_license",
+              "type": "checkbox",
+              "input": true,
+              "defaultValue": false
+            }
+          ]
+        }
+      ],
+      "title": "Other Information",
+      "type": "panel",
+      "tableView": false
+    }
+  ],
+  "title": "Wizard",
+  "display": "wizard",
+  "type": "form"
+}

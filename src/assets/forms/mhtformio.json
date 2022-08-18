@@ -1,0 +1,37 @@
+{
+    "components": [
+        {
+            "label": "Mahatma I-Card / Z Number",
+            "tableView": true,
+            "placeholder": "1234",
+            "validate": {
+                "required": true
+            },
+            "key": "mht_id",
+            "type": "textfield",
+            "input": true
+        },
+        {
+            "label": "Mobile Number",
+            "inputMask": "9999999999",
+            "customClass": "mb-3",
+            "tableView": true,
+            "validate": {
+                "required": true,
+                "customMessage": "Please enter a valid 10 digit mobile number"
+            },
+            "key": "phone",
+            "type": "phoneNumber",
+            "input": true
+        },
+        {
+            "type": "button",
+            "label": "Next",
+            "shortcut": "Enter",
+            "key": "submit",
+            "disableOnInvalid": false,
+            "input": true,
+            "tableView": false
+        }
+    ]
+  }
